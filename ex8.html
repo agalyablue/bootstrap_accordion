@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap 4 Collapse Hide Methods</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".toggle-false").click(function(){
+                $("#myCollapsible").collapse({
+                    toggle: false
+                });
+            });
+            $(".show-btn").click(function(){
+                $("#myCollapsible").collapse('show');
+            });
+            $(".hide-btn").click(function(){
+                $("#myCollapsible").collapse('hide');
+            });
+            $(".toggle-btn").click(function(){
+                $("#myCollapsible").collapse('toggle');
+            });
+        });
+    </script>
+    <style>
+        p{
+            background: #eee;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+            padding: 30px;
+        }
+        .bs-example{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="bs-example">
+    <!-- Trigger Button HTML -->
+    <input type="button" class="btn btn-primary toggle-false" value="Toggle False">
+    <input type="button" class="btn btn-primary show-btn" value="Show Button">
+    <input type="button" class="btn btn-primary hide-btn" value="Hide Button">
+    <input type="button" class="btn btn-primary toggle-btn" value="Toggle Button">
+    <!-- Collapsible Element HTML -->
+    <div id="myCollapsible" class="collapse show"><p>This is a simple example of expanding and collapsing individual element via JavaScript. <br><b>Click on the above buttons to see how it works.</b></p></div>
+</div>
+</body>
+</html>
+
+
+
+
+
