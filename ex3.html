@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Creating Bootstrap 4 Collapsible Element via Data Attributes</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        p{
+            background: #eee;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+            padding: 30px;
+        }
+        .bs-example{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="bs-example">
+    <!-- Trigger Button HTML -->
+    <input type="button" class="btn btn-primary" data-toggle="collapse" data-target="#myCollapsible" value="Toggle Button">
+    <!-- Collapsible Element HTML -->
+    <div id="myCollapsible" class="collapse show"><p>This is a simple example of expanding and collapsing individual element via data attribute. <br>Click on the <b>Toggle Button</b>button to see the effect.</p></div>
+</div>
+</body>
+</html>
